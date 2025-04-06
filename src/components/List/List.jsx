@@ -1,5 +1,7 @@
 import { Item } from "../Item/Item.jsx";
 
+import PropTypes from "prop-types";
+
 import { StyledList } from "./List.js";
 
 export const List = ({ events }) => {
@@ -10,4 +12,8 @@ export const List = ({ events }) => {
             ))}
         </StyledList>
     );
+}
+
+List.propTypes = {
+    events: PropTypes.array.isRequired,
 }
