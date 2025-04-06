@@ -1,4 +1,4 @@
-import { StyledItem } from "./StyledItem";
+import { StyledItem } from "./StyledItem.js";
 
 export const Item = ({ name, location, speaker, type, time }) => {
   return (
